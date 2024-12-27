@@ -49,7 +49,3 @@ Aplikasi ini dirancang untuk mempermudah penyortiran dan evaluasi kualitas buah 
 - **Framework Model:** YOLOv11
 - **Framework Aplikasi:** Streamlit
 - **Bahasa Pemrograman:** Python
-
-## Referensi
-1. [YOLOv11 Paper](https://arxiv.org/abs/...)
-2. Dataset digunakan dari **Roboflow**.
