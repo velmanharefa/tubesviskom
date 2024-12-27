@@ -1,51 +1,51 @@
 # Fruits Ripeness or Rottenness Detection Using YOLOv11
 
-## Penulis
-- **Nama:** Velman Noeli Harefa  
-  **NIM:** 1301213264  
-- **Nama:** Benaya Obed Sinaga  
-  **NIM:** 1301213178  
+## Authors
+- **Name:** Velman Noeli Harefa  
+  **Student ID:** 1301213178  
+- **Name:** Benaya Obed Sinaga  
+  **Student ID:** 1301213264  
 
-## Deskripsi Proyek
-Proyek ini bertujuan untuk mendeteksi dan mengklasifikasikan buah-buahan ke dalam delapan kategori berdasarkan kondisi **baik** (good) dan **buruk** (bad). Model yang digunakan adalah **YOLOv11**, yang diterapkan dalam sebuah aplikasi berbasis web menggunakan **Streamlit** untuk mendukung proses penilaian kualitas otomatis dan penyortiran dalam sektor agrikultur dan ritel.
+## Project Description
+This project aims to detect and classify fruits into eight categories based on their condition: **good** and **bad**. The model used is **YOLOv11**, implemented in a web-based application using **Streamlit** to support automated quality assessment and sorting processes in the agricultural and retail sectors.
 
 ## Dataset
-Dataset terdiri dari 4,399 gambar dengan proporsi:
-- **70%** untuk data pelatihan (training)
-- **20%** untuk data validasi (validation)
-- **10%** untuk data pengujian (testing)
+The dataset consists of 4,399 images divided into:
+- **70%** for training data
+- **20%** for validation data
+- **10%** for testing data
 
-Dataset mencakup 8 kategori:
-1. Apel (baik dan buruk)
-2. Pisang (baik dan buruk)
-3. Jeruk (baik dan buruk)
-4. Delima (baik dan buruk)
+The dataset includes 8 categories:
+1. Apple (good and bad)
+2. Banana (good and bad)
+3. Orange (good and bad)
+4. Pomegranate (good and bad)
 
-## Model dan Eksperimen
-Model YOLOv11 dilatih menggunakan **SGD optimizer** dengan konfigurasi hyperparameter sebagai berikut:
+## Model and Experiments
+The YOLOv11 model was trained using the **SGD optimizer** with the following hyperparameter configurations:
 - **Learning Rate (lr0):** 0.01
 - **Momentum:** 0.9
 - **Weight Decay:** 0.0005
-- **Image Size:** 640x640 piksel
+- **Image Size:** 640x640 pixels
 
-### Epoch yang Digunakan
-Model diuji pada tiga jumlah epoch:
-1. **50 epochs:** Memberikan hasil awal dengan presisi dan recall di atas 0.98.
-2. **100 epochs:** Menunjukkan keseimbangan terbaik antara akurasi dan efisiensi dengan:
+### Epochs Used
+The model was tested with three different numbers of epochs:
+1. **50 epochs:** Provided initial results with precision and recall above 0.98.
+2. **100 epochs:** Achieved the best balance between accuracy and efficiency with:
    - Precision: **0.988**
    - Recall: **0.993**
    - mAP50: **0.993**
-3. **150 epochs:** Memberikan performa tinggi dengan peningkatan kecil pada mAP50:95.
+3. **150 epochs:** Showed high performance with a slight improvement in mAP50:95.
 
-## Implementasi
-Model ini diimplementasikan dalam aplikasi berbasis web yang memungkinkan pengguna untuk mengunggah gambar buah dan mendapatkan hasil deteksi secara real-time, termasuk:
-- Bounding box
-- Label kategori
-- Tingkat kepercayaan prediksi
+## Implementation
+The trained YOLOv11 model was implemented in a web-based application that allows users to upload fruit images and obtain real-time detection results, including:
+- Bounding boxes
+- Category labels
+- Prediction confidence levels
 
-Aplikasi ini dirancang untuk mempermudah penyortiran dan evaluasi kualitas buah di industri agrikultur dan ritel.
+The application is designed to facilitate the sorting and quality assessment of fruits in the agricultural and retail industries.
 
-## Teknologi yang Digunakan
-- **Framework Model:** YOLOv11
-- **Framework Aplikasi:** Streamlit
-- **Bahasa Pemrograman:** Python
+## Technologies Used
+- **Model Framework:** YOLOv11
+- **Application Framework:** Streamlit
+- **Programming Language:** Python
